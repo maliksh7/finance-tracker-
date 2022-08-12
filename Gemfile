@@ -8,11 +8,17 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
+# gem 'rails', '~> 6.1.6'
+
 # Use devise for User Management and authentications
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 gem 'devise-bootstrap-views'
+# gem 'stock_quote'
+gem "stock_quote", '~> 3.0.0'
+
+# gem 'google-finance-ruby-client'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
