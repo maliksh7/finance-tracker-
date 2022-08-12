@@ -5,7 +5,10 @@ class StocksController < ApplicationController
             @stock =  Stock.new_from_lookup(params[:stock])
             # chking if correct string is entered or not
             if @stock
-                render 'users/my_portfolio'
+                # render partial: 'users/results'
+                respond_to do |format|
+                    format.js { render partial: 'users/results' }
+                end
             else
                 flash[:warning] = "You have entered an incorrect search string"
                 redirect_to my_portfolio_path

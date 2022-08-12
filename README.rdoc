@@ -3,3 +3,7 @@
 - Route -> search_stocks
 
 - Controller -> action - stocks_controller.rb search_stocks
+
+
+A server is already running. Check /home/saad/ROR/finance-tracker/tmp/pids/server.pid?
+Solution: killall ruby -9
